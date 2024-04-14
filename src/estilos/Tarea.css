@@ -1,0 +1,62 @@
+/* PALETA DE COLORES:
+    oscuro: #006778
+    intermedio: #0093AB
+    claro: #00AFC1
+    amarillo: #FFD124
+
+    blue: #1E2A78
+    red: #FF2E4C
+    yellow: #FFE720
+    eucalyptus: #49DEB2
+    light blue: #49BCF6
+*/
+
+.container-tarea {
+    width: 500px;
+    min-height: 65px;
+    background-color: #4f3977;
+    margin: 5px 0;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.container-tarea:nth-child(3n +1){
+  background-color: #FF2E4C;
+}
+.container-tarea:nth-child(3n +2){
+  background-color: #FFE720;
+  color: #FF2E4C;
+}
+.container-tarea:nth-child(3n +3){
+  background-color:#0cc4a3;
+  color: #1E2A78;
+}
+
+.txt-tarea {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+/* overflow-wrap: anywhere => hace que el texto (si es muy largo) se corte y siga debajo.*/
+
+.icono-tarea{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.container-tarea.completada {
+  background-color:  #1E2A78;
+  color: #49BCF6;
+  text-decoration: line-through;
+
+}

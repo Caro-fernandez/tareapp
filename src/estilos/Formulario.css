@@ -1,0 +1,58 @@
+/* PALETA DE COLORES:
+    oscuro: #006778
+    intermedio: #0093AB
+    claro: #00AFC1
+    amarillo: #FFD124
+
+    blue: #1E2A78
+    red: #FF2E4C
+    yellow: #FFE720
+    eucalyptus: #49DEB2
+    light blue: #49BCF6
+*/
+
+.tarea-form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.tarea-input{
+  width: 340px;
+  font-size: 18px;
+  background-color: white;
+  padding: 15px 32px 15px 16px;
+  border-radius: 8px 0 0 8px;
+  border: transparent;
+  outline: none;
+}
+.tarea-boton{
+  padding: 13px;
+  font-size: 18px;
+  font-family: Poppins;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  outline: none;
+  background: #1E2A78;
+  color: white;
+  text-transform: capitalize;
+}
+.tarea-boton:hover{
+  background-color:  #49BCF6;
+  font-weight: bold;
+  color: white;
+  border: transparent;
+  font-size: 17px;
+}
+@media (max-width: 578px){
+  .tarea-boton{
+    margin-top: 10px;  
+    border-radius: 8px;   
+    padding: 10px;
+  }   
+  .tarea-input{
+    width: 400px;
+    border-radius: 8px;
+  }
+}
